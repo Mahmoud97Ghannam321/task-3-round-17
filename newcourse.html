@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كورس جديد</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a> | 
+        <a href="mycourses.html">كورساتي</a> | 
+        <a href="newcourse.html">إضافة كورس</a>
+    </nav>
+
+    <h1>إضافة كورس جديد</h1>
+    <form action="#">
+        <label for="cname">course name :</label><br>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="cprice">course price:</label><br>
+        <input type="number" id="cprice" name="cprice" required><br><br>
+        <label for="cimage">course image URL:</label><br>
+        <input type="url" id="cimage" name="cimage" required><br><br> 
+
+
+        <p>نوع الكورس:</p>
+        <input type="radio" id="online" name="type" value="online">
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="type" value="offline">
+        <label for="offline">Offline</label><br><br>
+
+        <label for="instructor">اختر المدرب (يمكنك اختيار أكثر من مدرب):</label><br>
+        <select id="instructor" name="instructor" multiple>
+            <option value="ahmed">أحمدد</option>
+            <option value="sara">سارة</option>
+            <option value="omar">عمر</option>
+            <option value="mona">محسن</option>
+        </select>
+        <p><small>* اضغط على Ctrl (في ويندوز) لاختيار أكثر من مدرب.</small></p>
+
+        <input type="submit" value="إرسال البيانات">
+    </form>
+</body>
+</html>
